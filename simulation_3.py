@@ -17,15 +17,7 @@ def init(n, l):
     for i in range(len(v_x[0])):
         v_x[n-1][i] = 1
         v_x[n][i] = 1
-        
-     #   v_x[i][n-1] = 1
-      #  v_x[i][n-2] = 1
-        
-       # v_x[i][1] = 1
-        #v_x[i][0] = 1
-       
-   # for i in prange(25, 39):
-      #  v_x[i][15] = 0    
+          
      
     
     # v_y Ausgangsbedingungen
@@ -57,8 +49,6 @@ def v_x_berechnen(v_x, v_y, p, Reynold, n, dt, dx):
         v_x_neu[n][i] = 2 - v_x_neu[n-1][i] #oben
         v_x_neu[0][i] = - v_x_neu[1][i] #unten
         
-    #for i in prange(25, 39):
-        #v_x_neu[i][15] = 0
         
     return v_x_neu
 

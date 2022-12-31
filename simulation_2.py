@@ -231,7 +231,7 @@ d_feld = init_d(n, d_feld_koordinaten)
 
 # Test
 # Anzahl der Iterationen, i*dt ergibt die Zeit in Sekunden, bei Nutzung der Animation = 0
-i = 0
+i = 50
 
 
 print("##################")
@@ -271,7 +271,6 @@ ax1.set_ylabel("y in [m]")
 
 
 # Dichtefeld
-print(d_feld)
 ax2.set_title("Dichtefeld")
 ax2.pcolormesh(d_feld, cmap=cm.gray) #, shading="gouraud"
 plt.xticks([])
